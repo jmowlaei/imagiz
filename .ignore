@@ -1,3 +1,4 @@
 dist
 build
 imagiz.egg-info
+.vscode
