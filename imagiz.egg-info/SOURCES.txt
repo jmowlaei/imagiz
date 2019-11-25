@@ -1,9 +1,0 @@
-README.md
-setup.py
-imagiz/__init__.py
-imagiz.egg-info/PKG-INFO
-imagiz.egg-info/SOURCES.txt
-imagiz.egg-info/dependency_links.txt
-imagiz.egg-info/not-zip-safe
-imagiz.egg-info/requires.txt
-imagiz.egg-info/top_level.txt

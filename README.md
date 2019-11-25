@@ -1,5 +1,5 @@
 # imagiz
-Fast and none blocking live video streaming over network with OpenCV and ZMQ
+Fast and none blocking live video streaming over network with OpenCV and ZMQ.
 
 
 # Install
