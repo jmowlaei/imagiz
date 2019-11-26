@@ -1,4 +1,4 @@
-# imagiz
+# Imagiz
 Fast and none blocking live video streaming over network with OpenCV and ZMQ.
 
 
