@@ -31,6 +31,7 @@ while True:
 # Server
 ```
 import imagiz
+import cv2
 
 server=imagiz.Server()
 while True:
