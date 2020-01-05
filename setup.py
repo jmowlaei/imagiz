@@ -1,8 +1,4 @@
 from setuptools import setup
-def readme():
-    with open('README.rst') as f:
-        return f.read()
-# read the contents of your README file
 from os import path
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
