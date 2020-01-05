@@ -68,7 +68,6 @@ server=imagiz.TCP_Server(9990)
 server.start()
 while True:
     message=server.receive()
-    # print(m)
     frame=cv2.imdecode(mmessage.image,1)
     cv2.imshow("",frame)
     cv2.waitKey(1)
@@ -85,6 +84,7 @@ while True:
 | `request_timeout` | how many milliseconds wait to resend image again |
 | `request_retries` | how many time retries to send an image before client exit  |
 | `generate_image_id` | image_id is unique and ordered id that you can use for save data on disk or db also it is show time of image sended by client  |
+| `time_between_retries` | On TCP client show time between retries  |
 
 # Server Options
 | Name | Description |
