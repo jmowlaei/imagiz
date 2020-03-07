@@ -272,8 +272,6 @@ class TCP_Client():
                 print("W: No response from server, retrying…", flush=True)
                 print(ex)
                 retries_left -= 1
-                self.socket.close()
-                self.socket=self.__connect()
                 if retries_left == 0:
                     print("E: Server seems to be offline, abandoning", flush=True)
                     raise "Server seems to be offline, abandoning"
