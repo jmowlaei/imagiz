@@ -134,7 +134,7 @@ class Client():
                 retries_left -= 1
                 if retries_left == 0:
                     print("E: Server seems to be offline, abandoning", flush=True)
-                    raise "Server seems to be offline, abandoning"
+                    raise RuntimeWarning("Server seems to be offline, abandoning")
                 print("I: Reconnecting and resending ", flush=True)
                 # Create new connection
                 self.client = self.context.socket(zmq.REQ)
@@ -255,7 +255,7 @@ class TCP_Client():
                 retries_left -= 1
                 if retries_left == 0:
                     print("E: Server seems to be offline, abandoning", flush=True)
-                    raise "Server seems to be offline, abandoning"
+                    raise RuntimeWarning("Server seems to be offline, abandoning")
                 time.sleep(self.time_between_retries)
     def __sending(self,data):
         retries_left = self.request_retries
@@ -276,7 +276,7 @@ class TCP_Client():
                 self.socket=self.__connect()
                 if retries_left == 0:
                     print("E: Server seems to be offline, abandoning", flush=True)
-                    raise "Server seems to be offline, abandoning"
+                    raise RuntimeWarning("Server seems to be offline, abandoning")
                 time.sleep(self.time_between_retries)
     def __del__(self):
         pass
